@@ -1,6 +1,6 @@
 import { createPost, renderPosts } from "./post.js";
 import { postData } from "./data.js";
-import { generateImage } from "./general.js";
+import { generateImage, generateInfo2 } from "./general.js";
 
 const root = document.getElementById("root");
 
@@ -39,3 +39,4 @@ const generatePosts = () => {
 init();
 generatePosts();
 generateImage();
+generateInfo2(56, 425, 429);
