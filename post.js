@@ -1,4 +1,4 @@
-export const createPost = (image = "https://i.pinimg.com/originals/15/94/13/1594132571748b75eeb9eb1ca00b0c28.jpg") => {
+export const createPost = (image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcIB1_dG70pyj8riju4LDXwDnZu4xgoLReYA&usqp=CAU") => {
   // return一個post的element
   const container = document.createElement("div");
 

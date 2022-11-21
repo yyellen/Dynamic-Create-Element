@@ -1,6 +1,6 @@
 export const postData = [
   {
-    image: "https://i.pinimg.com/736x/ed/21/f2/ed21f2c4e5fef735d23cc8711ad26d7e.jpg"
+    image: "https://i.pinimg.com/originals/15/94/13/1594132571748b75eeb9eb1ca00b0c28.jpg"
   },
   {
     image: "https://m.media-amazon.com/images/I/71lLTbWLkeL._AC_SL1200_.jpg"

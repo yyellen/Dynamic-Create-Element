@@ -1,11 +1,21 @@
 import { createPost, renderPosts } from "./post.js";
 import { postData } from "./data.js";
+import { generateImage } from "./general.js";
 
 const root = document.getElementById("root");
 
 const init = () => {
   const infoArea = document.createElement("div");
   infoArea.classList.add("info-area");
+
+  const infoLeft = document.createElement("div");
+  infoLeft.classList.add("info-left");
+
+  const infoRight = document.createElement("div");
+  infoRight.classList.add("info-right");
+
+  infoArea.appendChild(infoLeft);
+  infoArea.appendChild(infoRight);
 
   const postArea = document.createElement("div");
   postArea.classList.add("post-area");
@@ -28,3 +38,4 @@ const generatePosts = () => {
 
 init();
 generatePosts();
+generateImage();

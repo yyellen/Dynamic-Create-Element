@@ -38,3 +38,22 @@
 .info-right {
   height: 100%;
 }
+
+.info-left {
+  width: 40%;
+}
+
+.info-right {
+  width: 60%;
+}
+
+.profile-image-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+}
