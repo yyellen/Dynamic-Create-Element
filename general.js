@@ -17,8 +17,41 @@ export const generateImage = (image = "https://i.pinimg.com/736x/ed/21/f2/ed21f2
   infoLeft.appendChild(container);
 }
 
-export const generateInfo1 = () => {
+export const generateInfo1 = (name) => {
+  const infoRight = document.querySelector(".info-right");
+
+  const container = document.createElement("div");
+  container.classList.add("info-1-container");
   
+  const nameBlock = document.createElement("div");
+  const sendMessageBlock = document.createElement("div");
+  const followBlock = document.createElement("div");
+  const moreActionBlock = document.createElement("div");
+
+  const nameText = document.createTextNode(name);
+  nameBlock.appendChild(nameText);
+
+  const sendMessageButton = document.createElement("button");
+  const sendMessageButtonText = document.createTextNode("發送訊息");
+  sendMessageButton.appendChild(sendMessageButtonText);
+  sendMessageBlock.appendChild(sendMessageButton);
+
+  const followButton = document.createElement("button");
+  const followButtonText = document.createTextNode("追蹤");
+  followButton.appendChild(followButtonText);
+  followBlock.appendChild(followButton);
+
+  const moreActionButton = document.createElement("button");
+  const moreActionButtonText = document.createTextNode("...");
+  moreActionButton.appendChild(moreActionButtonText);
+  moreActionBlock.appendChild(moreActionButton);
+
+  container.appendChild(nameBlock);
+  container.appendChild(sendMessageBlock);
+  container.appendChild(followBlock);
+  container.appendChild(moreActionBlock);
+
+  infoRight.appendChild(container);
 }
 
 export const generateInfo2 = (postCount = 0, followerCount = 0, followingCount = 0) => {
