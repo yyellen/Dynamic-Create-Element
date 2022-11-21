@@ -83,6 +83,26 @@ export const generateInfo2 = (postCount = 0, followerCount = 0, followingCount =
   infoRight.appendChild(container);
 }
 
-export const generateInfo3 = () => {
+export const generateInfo3 = (nickName = "", website = "") => {
+  const infoRight = document.querySelector(".info-right");
 
+  const container = document.createElement("div");
+  container.classList.add("info-3-container");
+
+  const nickNameBlock = document.createElement("div");
+  const websiteBlock = document.createElement("a");
+
+  websiteBlock.setAttribute("target", "_blank");
+  websiteBlock.setAttribute("href", website);
+
+  const websiteText = document.createTextNode(website);
+  websiteBlock.appendChild(websiteText);
+
+  const nickNameText = document.createTextNode(nickName);
+  nickNameBlock.appendChild(nickNameText);
+
+  container.appendChild(nickNameBlock);
+  container.appendChild(websiteBlock);
+
+  infoRight.appendChild(container);
 }
