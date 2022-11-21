@@ -1,10 +1,9 @@
 import { createPost, renderPosts } from "./post.js";
 import { postData } from "./data.js";
-import { generateImage, generateInfo1, generateInfo2, generateInfo3 } from "./general.js";
-
-const root = document.getElementById("root");
+import { generateInfo } from "./general.js";
 
 const init = () => {
+  const root = document.getElementById("root");
   const infoArea = document.createElement("div");
   infoArea.classList.add("info-area");
 
@@ -38,7 +37,4 @@ const generatePosts = () => {
 
 init();
 generatePosts();
-generateImage();
-generateInfo1("Shiba Inu")
-generateInfo2(56, 425, 429);
-generateInfo3("shibainu", "google.com.tw");
+generateInfo();

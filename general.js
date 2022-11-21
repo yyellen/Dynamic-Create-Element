@@ -106,3 +106,10 @@ export const generateInfo3 = (nickName = "", website = "") => {
 
   infoRight.appendChild(container);
 }
+
+export const generateInfo = () => {
+  generateImage();
+  generateInfo1("Shiba Inu")
+  generateInfo2(56, 425, 429);
+  generateInfo3("shibainu", "google.com.tw");
+}
