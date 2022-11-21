@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+  background: pink;
+  padding: 15px;
+}
+
+.info-area, 
+.post-area {
+  width: 100%;
+}
+
+.info-area {
+  height: 240px;
+  background: cyan;
+}
+
+.post-area {
+  margin-top: 40px;
+  height: 500px;
+  background: orange;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-container {
+  width: 180px;
+  height: 180px;
+}
+
+.info-left, 
+.info-right {
+  height: 100%;
+}
