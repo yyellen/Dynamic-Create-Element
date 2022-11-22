@@ -1,4 +1,4 @@
-export const generateImage = (image = "https://i.pinimg.com/736x/ed/21/f2/ed21f2c4e5fef735d23cc8711ad26d7e.jpg") => {
+const generateImage = (image = "https://i.pinimg.com/736x/ed/21/f2/ed21f2c4e5fef735d23cc8711ad26d7e.jpg") => {
   const infoLeft = document.querySelector(".info-left");
   const container = document.createElement("div");
   
@@ -17,7 +17,7 @@ export const generateImage = (image = "https://i.pinimg.com/736x/ed/21/f2/ed21f2
   infoLeft.appendChild(container);
 }
 
-export const generateInfo1 = (name) => {
+const generateInfo1 = (name) => {
   const infoRight = document.querySelector(".info-right");
 
   const container = document.createElement("div");
@@ -54,7 +54,7 @@ export const generateInfo1 = (name) => {
   infoRight.appendChild(container);
 }
 
-export const generateInfo2 = (postCount = 0, followerCount = 0, followingCount = 0) => {
+const generateInfo2 = (postCount = 0, followerCount = 0, followingCount = 0) => {
   const infoRight = document.querySelector(".info-right");
 
   const container = document.createElement("div");
@@ -83,7 +83,7 @@ export const generateInfo2 = (postCount = 0, followerCount = 0, followingCount =
   infoRight.appendChild(container);
 }
 
-export const generateInfo3 = (nickName = "", website = "") => {
+const generateInfo3 = (nickName = "", website = "") => {
   const infoRight = document.querySelector(".info-right");
 
   const container = document.createElement("div");
