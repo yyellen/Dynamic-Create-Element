@@ -1,14 +1,13 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 #root {
-  width: 600px;
-  height: 100vh;
+  width: 604px;
   margin: 0 auto;
-  background: pink;
-  padding: 15px;
+  padding: 16px;
 }
 
 .info-area, 
@@ -18,16 +17,14 @@
 
 .info-area {
   height: 240px;
-  background: cyan;
   display: flex;
 }
 
 .post-area {
-  margin-top: 40px;
-  height: 500px;
-  background: orange;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
+  gap: 16px;
 }
 
 .post-container {
@@ -69,9 +66,12 @@
 }
 
 .info-1-container button {
-  height: 30px;
+  height: 28px;
   margin-left: 20px;
   cursor: pointer;
+  border: 1px #cccccc solid;
+  border-radius: 4px;
+  background: #ffffff;
 }
 
 .info-2-container {

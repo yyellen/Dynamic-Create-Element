@@ -37,12 +37,12 @@ const generateInfo1 = (name) => {
   sendMessageBlock.appendChild(sendMessageButton);
 
   const followButton = document.createElement("button");
-  const followButtonText = document.createTextNode("追蹤");
+  const followButtonText = document.createTextNode("追蹤中");
   followButton.appendChild(followButtonText);
   followBlock.appendChild(followButton);
 
   const moreActionButton = document.createElement("button");
-  const moreActionButtonText = document.createTextNode("...");
+  const moreActionButtonText = document.createTextNode("▾");
   moreActionButton.appendChild(moreActionButtonText);
   moreActionBlock.appendChild(moreActionButton);
 
@@ -64,9 +64,9 @@ const generateInfo2 = (postCount = 0, followerCount = 0, followingCount = 0) => 
   const followerCountBlock = document.createElement("div");
   const followingCountBlock = document.createElement("div");
 
-  const postCountText = document.createTextNode(`${postCount}貼文`);
-  const followerCountText = document.createTextNode(`${followerCount}位粉絲`);
-  const followingCountText = document.createTextNode(`${followingCount}追蹤中`);
+  const postCountText = document.createTextNode(`${postCount} 貼文`);
+  const followerCountText = document.createTextNode(`${followerCount} 位粉絲`);
+  const followingCountText = document.createTextNode(`${followingCount} 追蹤中`);
 
   postCountBlock.appendChild(postCountText);
   followerCountBlock.appendChild(followerCountText);

@@ -16,5 +16,12 @@ export const postData = [
   },
   {
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnAaVPXirq-nHq4VcCtsFdsiI5K4HO-HdK3w&usqp=CAU"
-  }
+  },
+  {
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcIB1_dG70pyj8riju4LDXwDnZu4xgoLReYA&usqp=CAU"
+  },
+  {
+    image: "https://i.pinimg.com/originals/37/13/aa/3713aa0e540d9331a8d1132e0feea6a1.jpg"
+  },
+  
 ];
