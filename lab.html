@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="general"></div>
+    <div id="post" class="d-flex">
+      <div class="post-picture">
+        <img src="https://picsum.photos/500" alt="post-picture" />
+      </div>
+      <div class="post-picture">
+        <img src="https://picsum.photos/500" alt="post-picture" />
+      </div>
+      <div class="post-picture">
+        <img src="https://picsum.photos/500" alt="post-picture" />
+      </div>
+      <div class="post-picture">
+        <img src="https://picsum.photos/500" alt="post-picture" />
+      </div>
+      <div class="post-picture">
+        <img src="https://picsum.photos/500" alt="post-picture" />
+      </div>
+      <div class="post-picture">
+        <img src="https://picsum.photos/500" alt="post-picture" />
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #post {
+    background-color: cyan;
+    justify-content: center;
+  }
+  .post-picture {
+    display: flex;
+    padding: 0em;
+    width: calc(30%);
+    margin: 1em;
+    /* background-color: pink;
+    height: 600px;
+    width: 600px; */
+  }
+  img {
+    /* width: calc(33% - 1em); */
+    object-fit: cover;
+  }
+</style>
